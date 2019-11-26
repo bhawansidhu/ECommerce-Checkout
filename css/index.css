@@ -1,0 +1,23 @@
+.head {
+    display: inline-block;
+    padding-right: 1em;
+}
+
+div {
+    padding-bottom: 0.5em;
+}
+
+.content {
+    padding-right: 2em;
+    display: inline-block;
+}
+
+.but{
+    background-color:rgb(13, 114, 89);
+    border: none;
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 0.9em;
+    border-radius: 0.3em;
+}

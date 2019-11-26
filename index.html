@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Avleen">
+    <title>ECommerce Checkout</title>
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <h1>ECommerce Checkout</h1>
+    <div>
+        <h4 class="head">Product</h4>
+        <h4 class="head">Quantity</h4>
+        <h4 class="head">Unit Price</h4>
+        <h4 class="head">Extended Price</h4>
+    </div>
+    <div>
+        <label class="content">Pants</label>
+        <div class="content">
+            <input type="button" id="pantsMinusButton" value="-">
+            <label id="pantsQty"> 0 </label>
+            <input type="button" id="pantsAddButton" value="+">
+        </div>
+        <label class="content">$ 40.99</label>
+        <label id="extdPricePants">$ 0.00 </label>
+    </div>
+
+    <div>
+        <label class="content"> Shirt</label>
+        <div class="content">
+            <input type="button" id="shirtMinusButton" value="-">
+            <label id="shirtQty"> 0 </label>
+            <input type="button" id="shirtAddButton" value="+">
+        </div>
+        <label class="content">$ 10.99</label>
+        <label id="extdPriceShirt">$ 0.00 </label>
+    </div>
+    <div>
+        <input type="button" id="calculate" class="but" value="Calculate"><br><br>
+        <label>Sub Total :</label>
+        <label id="subTotal"></label><br><br>
+        <label>Tax :</label>
+        <label id="taxValue"></label><br><br>
+        <label>Total :</label>
+        <label id="totalValue"></label><br><br><br>
+    </div>
+    <div>
+        <label><strong>Have a promo code?</strong></label>
+        <input type="button" id="promo" class="but" value="Click to Enter">
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
