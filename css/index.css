@@ -1,16 +1,17 @@
-.head {
+.info {
+    display: inline-block;
+    padding:   1em 1.3em;
+ }
+
+
+
+.heading {
     display: inline-block;
     padding-right: 1em;
+    color: rgb(14, 80, 63);
 }
 
-div {
-    padding-bottom: 0.5em;
-}
 
-.content {
-    padding-right: 2em;
-    display: inline-block;
-}
 
 .but{
     background-color:rgb(13, 114, 89);
