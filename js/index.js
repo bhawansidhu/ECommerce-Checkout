@@ -14,9 +14,18 @@ let varTax = document.getElementById("tax");
 let varTotalValue = document.getElementById("total");
 
 
+function increaseValuePants() {
+    let qtyAdd = parseInt(varPantQty.innerHTML) + 1;
+
+    varPantQty.innerHTML = qtyAdd;
+
+    let extenddPrice = parseFloat(varExtdPricePants.innerHTML);
+    varExtdPricePants.innerHTML = (qtyAdd * 40.99).toFixed(2);
+
+}
 
 function decreaseValuePants() {
-    
+
     if (varPantQty.innerHTML > 0) {
         let qtyMinus = parseInt(varPantQty.innerHTML) - 1;
         varPantQty.innerHTML = qtyMinus;
@@ -24,18 +33,19 @@ function decreaseValuePants() {
     } else {
         varPantQty.innerHTML = 0;
     }
-    let extdPrc = parseFloat(varExtdPricePants.innerHTML);
+    let extenddPrice = parseFloat(varExtdPricePants.innerHTML);
     varExtdPricePants.innerHTML = (varPantQty.innerHTML * 40.99).toFixed(2);
 }
 
 
-function increaseValuePants() {
-    let qtyAdd = parseInt(varPantQty.innerHTML) + 1;
-  
-    varPantQty.innerHTML = qtyAdd;
 
-    let extdPrc = parseFloat(varExtdPricePants.innerHTML);
-    varExtdPricePants.innerHTML = (qtyAdd * 40.99).toFixed(2);
+function increaseValueShirt() {
+    let qtyAdd = parseInt(varShirtQty.innerHTML) + 1;
+
+    varShirtQty.innerHTML = qtyAdd;
+
+    let extendPrice = parseFloat(varExtdPriceShirt.innerHTML);
+    varExtdPriceShirt.innerHTML = (qtyAdd * 10.99).toFixed(2);
 
 }
 
@@ -48,22 +58,12 @@ function decreaseValueShirt() {
         varShirtQty.innerHTML = 0;
     }
 
-    
-    let extdPrc = parseFloat(varExtdPriceShirt.innerHTML);
+
+    let extendPrice = parseFloat(varExtdPriceShirt.innerHTML);
     varExtdPriceShirt.innerHTML = (varShirtQty.innerHTML * 10.99).toFixed(2);
 
 }
 
-
-function increaseValueShirt() {
-    let qtyAdd = parseInt(varShirtQty.innerHTML) + 1;
-   
-    varShirtQty.innerHTML = qtyAdd;
-
-    let extdPrc = parseFloat(varExtdPriceShirt.innerHTML);
-    varExtdPriceShirt.innerHTML = (qtyAdd * 10.99).toFixed(2);
-
-}
 
 function calculate() {
     varSubTotal.innerHTML = (parseFloat(varExtdPricePants.innerHTML) + parseFloat(varExtdPriceShirt.innerHTML)).toFixed(2);
@@ -84,9 +84,9 @@ function promo() {
     }
 }
 
-minusButtonPants.addEventListener("click", decreaseValuePants);
 plusButtonPants.addEventListener("click", increaseValuePants);
-minusButtonShirt.addEventListener("click", decreaseValueShirt);
+minusButtonPants.addEventListener("click", decreaseValuePants);
 plusButtonShirt.addEventListener("click", increaseValueShirt);
+minusButtonShirt.addEventListener("click", decreaseValueShirt);
 calcSubTotal.addEventListener("click", calculate);
 promoCode.addEventListener("click", promo);

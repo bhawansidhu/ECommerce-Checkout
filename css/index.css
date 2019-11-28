@@ -1,3 +1,7 @@
+body{
+    background-color: rgb(231, 223, 223);
+}
+
 .info {
     display: inline-block;
     padding:   1em 1.3em;
@@ -11,7 +15,12 @@
     color: rgb(14, 80, 63);
 }
 
-
+main{
+    border: 0.01em solid ;
+     border-radius: 0.2em ;
+     background-color: rgb(218, 212, 212);
+     padding: 2em;
+}
 
 .but{
     background-color:rgb(13, 114, 89);
