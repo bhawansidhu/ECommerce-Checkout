@@ -5,13 +5,14 @@ body{
 .info {
     display: inline-block;
     padding:   1em 1.3em;
+    padding-left: 1.5em;
  }
 
 
 
 .heading {
     display: inline-block;
-    padding-right: 1em;
+    padding-right: 2em;
     color: rgb(14, 80, 63);
 }
 
