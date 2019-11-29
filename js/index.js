@@ -73,7 +73,7 @@ function calculate() {
 
 function promo() {
 
-    let promoCode = prompt("Enter promo code!");
+    let promoCode = prompt("Enter promo code! ");
     if (promoCode == "NOTAX") {
         varTax.innerHTML = 0;
         varTotalValue.innerHTML = (parseFloat(varSubTotal.innerHTML) + parseFloat(varTax.innerHTML)).toFixed(2);
